@@ -11,33 +11,34 @@ const MUESTRAS = [
   { src: "/samples/maze-complex.jpg", alt: "Laberinto más complejo", rotate: "rotate-6" },
   { src: "/samples/matching.jpg", alt: "Juego de emparejar formas", rotate: "-rotate-3" },
   { src: "/samples/counting.jpg", alt: "Juego de contar", rotate: "rotate-2" },
+  { src: "/samples/color-by-number.jpg", alt: "Colorea por números", rotate: "rotate-4" },
+  { src: "/samples/reward-chart.jpg", alt: "Tabla de recompensas semanal", rotate: "-rotate-4" },
+  { src: "/samples/shapes.jpg", alt: "Hoja de trazado de formas geométricas", rotate: "rotate-2" },
+  { src: "/samples/sight-words.jpg", alt: "Hoja de palabras de uso frecuente", rotate: "-rotate-5" },
+  { src: "/samples/emotions.jpg", alt: "Actividad de identificar emociones", rotate: "rotate-5" },
+  { src: "/samples/puzzle.jpg", alt: "Rompecabezas para recortar y armar", rotate: "-rotate-2" },
 ];
 
 const BENEFICIOS = [
   {
-    emoji: "📚",
-    titulo: "Cuentos infantiles",
-    texto: "Divertidos y útiles, transmiten valores importantes.",
-  },
-  {
-    emoji: "🔤",
-    titulo: "Letras y números",
-    texto: "Aprendizaje del abecedario y los números en español e inglés.",
-  },
-  {
     emoji: "🎨",
-    titulo: "Colorear y actividades",
-    texto: "Estimulan la creatividad y la imaginación.",
+    titulo: "Colorear",
+    texto: "Dibujos, colorea por números y pinta con puntos para todas las edades.",
   },
   {
-    emoji: "🧠",
-    titulo: "Desarrollo de habilidades",
-    texto: "Concentración, memoria, lógica y pensamiento creativo.",
+    emoji: "✏️",
+    titulo: "Hojas de trabajo y aprendizaje",
+    texto: "Letras, números, formas, lectura, trazado y palabras de uso frecuente.",
   },
   {
-    emoji: "🦉",
-    titulo: "Cuentos de valores",
-    texto: "Historias con un estilo sencillo y amigable para niños.",
+    emoji: "🧩",
+    titulo: "Juegos y rompecabezas",
+    texto: "Laberintos, emparejar, rompecabezas y juegos de roles.",
+  },
+  {
+    emoji: "🌟",
+    titulo: "Organización y hábitos",
+    texto: "Tablas de recompensas, responsabilidades y rutinas para toda la familia.",
   },
 ];
 
@@ -97,7 +98,7 @@ export default function Home() {
         <h2 className="text-center font-display text-3xl font-bold text-cream sm:text-4xl">
           Así se ven algunas hojas de la biblioteca
         </h2>
-        <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-6 sm:grid-cols-3">
+        <div className="mx-auto mt-10 grid max-w-5xl grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
           {MUESTRAS.map((m) => (
             <div
               key={m.src}
@@ -119,7 +120,7 @@ export default function Home() {
         <h2 className="text-center font-display text-3xl font-bold text-cream sm:text-4xl">
           ¿Qué encontrarás dentro?
         </h2>
-        <div className="mx-auto mt-10 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mx-auto mt-10 grid max-w-4xl gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {BENEFICIOS.map((b) => (
             <div
               key={b.titulo}
